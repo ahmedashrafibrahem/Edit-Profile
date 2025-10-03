@@ -1,0 +1,22 @@
+<div class="profile-container">
+  <h2>Edit Profile</h2>
+  <form (ngSubmit)="updateProfile()">
+    <div class="form-group">
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" [(ngModel)]="profileData.first_name" name="first_name" required>
+    </div>
+    <div class="form-group">
+      <label for="last_name">Last Name:</label>
+      <input type="text" id="last_name" [(ngModel)]="profileData.last_name" name="last_name" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="text" id="phone" [(ngModel)]="profileData.phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" [(ngModel)]="profileData.email" name="email" required>
+    </div>
+    <button type="submit">Update Profile</button>
+  </form>
+</div>
